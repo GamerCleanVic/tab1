@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
-<html>
-<head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/tab.css">
-<title>TABUADA WEB</title>
-</head>
-<body>
-<h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
-<!-- RISCO DE INJECT (NÃƒO SEI FAZER AINDA CONDIÃ‡Ã•ES PARA != DE NÂºS OU PARA CAMPO EM BRANCO) -->
-<form method="post" action="" class="form1">
-<input type="text" id="a" name="a" class="caixa1" value="">
-<button oneclick="enviar()" class="btn1">CONFIRMAR</button>
-</form><br>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/tab.css" />
+      <title>TABUADA WEB</title>
+    </head>
+    <body>
+      <h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
+      <!-- RISCO DE INJECT (NÃƒO SEI FAZER AINDA CONDIÃ‡Ã•ES PARA != DE NÂºS OU PARA CAMPO EM BRANCO) -->
+      <div class="form1">
+        <input type="text" id="a" name="a" class="caixa1" value="" />
+        <button class="btn1">CONFIRMAR</button>
+			</div>
+      <br />
 
+      <p id="fm1"></p>
+      <p id="fm2"></p>
+      <p id="fm3"></p>
+      <p id="fm4"></p>
+      <script type="text/javascript">
+        var b = document.getElementById("a").value;
+        document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
+        document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
 
-<p id="fm1"></p>
-<p id="fm2"></p>
-<p id="fm3"></p>
-<p id="fm4"></p>
-<script type="text/javascript">
-var b = document.getElementById("a").value;
-document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
-document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
-function enviar()
-	for(var i=1;i<=10;i++){
-		document.getElementById("fm3").innerHTML = b + " + " + i + " = " + (b + i) + "<br>";
-	}
+				var btnEnviar = document.querySelector('.btn1')
 
-document.getElementById("fm4").innerHTML = "<br><br>";
-</script>
+				btnEnviar.addEventListener('click', function(event){
+					event.preventDefault();
+					enviar();
+				})
 
-</body>
+        function enviar() {
+        	for(var i=1;i<=10;i++){
+        		document.getElementById("fm3").innerHTML = b + " + " + i + " = " + (b + i) + "<br>";
+        	}
+				}
+
+        document.getElementById("fm4").innerHTML = "<br><br>";
+      </script>
+    </body>
+  </html>
 </html>
-

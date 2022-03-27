@@ -7,43 +7,29 @@
 <title>TABUADA WEB</title>
 </head>
 <body>
-<h1 class="hOne">DIGITE UM NÃšMERO INTEIRO</h1>
+<h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
 <!-- RISCO DE INJECT (NÃƒO SEI FAZER AINDA CONDIÃ‡Ã•ES PARA != DE NÂºS OU PARA CAMPO EM BRANCO) -->
 <form method="post" action="" class="form1">
-<input type="text" id="a" name="a" class="caixa1">
-<input type="submit" value="CONFIRMAR" class="btn1">
+<input type="text" id="a" name="a" class="caixa1" value="">
+<button oneclick="enviar()" class="btn1">CONFIRMAR</button>
 </form><br>
+
+
+<p id="fm1"></p>
+<p id="fm2"></p>
+<p id="fm3"></p>
+<p id="fm4"></p>
+<script type="text/javascript">
+var b = document.getElementById("a").value;
+document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
+document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
+function enviar()
+	for(var i=1;i<=10;i++){
+		document.getElementById("fm3").innerHTML = b + " + " + i + " = " + (b + i) + "<br>";
+	}
+
+document.getElementById("fm4").innerHTML = "<br><br>";
+</script>
+
 </body>
 </html>
-<?php
-$a = 10;
-if(isset($_POST['a'])){
-    $a = $_POST['a'];
-}
-
-//TABUADA
-echo ("TABUADA DO $a<br><br>");
-echo ("SOMA<br>");
-for($i=1;$i<=10;$i++){
-echo("$a + $i = ".$a + $i."<br>");
-}
-echo("<br><br>");
-
-echo ("SUBTRAÃ‡ÃƒO<br>");
-for($i=1;$i<=10;$i++){
-echo("$a - $i = ".$a - $i."<br>");
-}
-echo("<br><br>");
-
-echo ("MULTIPLICAÃ‡ÃƒO<br>");
-for($i=1;$i<=10;$i++){
-echo("$a x $i = ".$a * $i."<br>");
-}
-echo("<br><br>");
-
-echo ("DIVISÃƒO<br>");
-for($i=1;$i<=10;$i++){
-echo("$a / $i = ".$a / $i."<br>");
-}
-echo("<br><br>");
-?>

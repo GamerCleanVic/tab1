@@ -12,7 +12,7 @@
       <div class="form1">
         <input type="text" id="a" name="a" class="caixa1" value="" />
         <button class="btn1">CONFIRMAR</button>
-			</div>
+      </div>
       <br />
 
       <p id="fm1"></p>
@@ -20,22 +20,23 @@
       <p id="fm3"></p>
       <p id="fm4"></p>
       <script type="text/javascript">
+
+	var btnEnviar = document.querySelector('.btn1')
+	btnEnviar.addEventListener('click', function(event){
+		event.preventDefault();
+		enviar();
+	})
+
+        function enviar() {
         var b = document.getElementById("a").value;
         document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
         document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
-
-				var btnEnviar = document.querySelector('.btn1')
-
-				btnEnviar.addEventListener('click', function(event){
-					event.preventDefault();
-					enviar();
-				})
-
-        function enviar() {
-        	for(var i=1;i<=10;i++){
-        		document.getElementById("fm3").innerHTML = b + " + " + i + " = " + (b + i) + "<br>";
+	var i = 0;
+	var aux = 0;
+        	for(i=1;i<10;i++){
+			var aux = document.getElementById("fm3").innerHTML =b+" + "+i+" = "+(b + i)+"<br>";
         	}
-				}
+	}
 
         document.getElementById("fm4").innerHTML = "<br><br>";
       </script>

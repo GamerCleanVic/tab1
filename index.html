@@ -8,17 +8,17 @@
     </head>
     <body>
       <h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
-      <!-- RISCO DE INJECT (NÃƒO SEI FAZER AINDA CONDIÃ‡Ã•ES PARA != DE NÂºS OU PARA CAMPO EM BRANCO) -->
       <div class="form1">
         <input type="text" autocomplete="off" id="a" name="a" class="caixa1" value="" />
         <button class="btn1">CONFIRMAR</button>
       </div>
       <br />
 
-      <p id="fm1"></p>
-      <p id="fm2"></p>
-      <p id="fm3"></p>
-      <p id="fm4"></p>
+      <div class="celula2"><p id="fm1"></p></div>
+      <div class="celula2"><p id="fm2" type="text/javascript"></p></div>
+      <div class="celula2"><p id="fm3"></p></div>
+      <div class="celula2"><p id="fm4"></p></div>
+      <div class="celula2"><p id="fm5"></p></div>
       <script type="text/javascript">
 
 
@@ -30,7 +30,6 @@
         function enviar() {
         var b = document.getElementById("a").value;
         document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
-        document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
 	var i = 0;
 	var c = parseInt(b);
 document.write("TABUADA DO "+b+"<br><br>");
@@ -63,7 +62,6 @@ document.write("DIVISÃO"+"<br>");
 
 	}
 
-        document.getElementById("fm4").innerHTML = "<br><br>";
       </script>
     </body>
   </html>

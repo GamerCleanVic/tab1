@@ -10,7 +10,7 @@
       <h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
       <!-- RISCO DE INJECT (NÃƒO SEI FAZER AINDA CONDIÃ‡Ã•ES PARA != DE NÂºS OU PARA CAMPO EM BRANCO) -->
       <div class="form1">
-        <input type="text" id="a" name="a" class="caixa1" value="" />
+        <input type="text" autocomplete="off" id="a" name="a" class="caixa1" value="" />
         <button class="btn1">CONFIRMAR</button>
       </div>
       <br />
@@ -21,21 +21,46 @@
       <p id="fm4"></p>
       <script type="text/javascript">
 
+
 	var btnEnviar = document.querySelector('.btn1')
 	btnEnviar.addEventListener('click', function(event){
 		event.preventDefault();
 		enviar();
 	})
-
         function enviar() {
         var b = document.getElementById("a").value;
         document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
         document.getElementById("fm2").innerHTML = "SOMA" + "<br>";
 	var i = 0;
-	var aux = 0;
-        	for(i=1;i<10;i++){
-			var aux = document.getElementById("fm3").innerHTML =b+" + "+i+" = "+(b + i)+"<br>";
+	var c = parseInt(b);
+document.write("TABUADA DO "+b+"<br><br>");
+document.write("SOMA"+"<br>");
+
+
+        	for(i=1;i<=10;i++){
+			/*document.getElementById("fm3").innerHTML =(b+" + "+i+" = "+(c + i)+"<br>"); */
+			/*document.body.style.backgroundColor = '#1b1b1b';*/
+			document.write(b+" + "+i+" = "+(c + i)+"<br>");
         	}
+
+document.write("<br><br>");
+document.write("SUBTRAÇÃO"+"<br>");
+        	for(i=1;i<=10;i++){
+			document.write(b+" - "+i+" = "+(c - i)+"<br>");
+        	}
+document.write("<br><br>");
+document.write("MULTIPLICAÇÃO"+"<br>");
+        	for(i=1;i<=10;i++){
+			document.write(b+" x "+i+" = "+(c * i)+"<br>");
+        	}
+document.write("<br><br>");
+document.write("DIVISÃO"+"<br>");
+        	for(i=1;i<=10;i++){
+			document.write(b+" / "+i+" = "+(c / i)+"<br>");
+        	}
+
+
+
 	}
 
         document.getElementById("fm4").innerHTML = "<br><br>";

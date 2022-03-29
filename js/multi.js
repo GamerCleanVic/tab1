@@ -1,18 +1,20 @@
 var btnEnviar = document.querySelector('.btn1')
-	btnEnviar.addEventListener('click', function(event){
-		event.preventDefault();
-		enviar();
-	})
-        function enviar() {
-        var b = document.getElementById("a").value;
-        /*document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>"; */
-        document.getElementById("fm4").innerHTML = "MULTIPLICAÇÃO" + "<br>";
+btnEnviar.addEventListener('click', function(event){
+	event.preventDefault();
+	enviar();
+})
+function enviar() {
+	const h4 = document.getElementById("fm2");
+       	var b = document.getElementById("a").value;
+
 	var i = 0;
 	var c = parseInt(b);
-document.write("TABUADA DO "+b+"<br><br>");
-document.write("MULTIPLICAÇÃO"+"<br>");
-        	for(i=1;i<=10;i++){
-			document.write(b+" x "+i+" = "+(c * i)+"<br>");
-        	}
-document.write("<br><br>");
-	}
+
+	for(i=10;i>0;i--){
+		let print6 = (b+" + "+i+" = "+(c + i)+"<br>");
+		h4.insertAdjacentHTML("afterend", print6);
+        }
+		
+	let print7 = ("<br><br>");
+	h4.insertAdjacentHTML("afterend", print7);
+}

@@ -28,28 +28,43 @@ border:2px solid darkgreen;
 border-radius:5px;
 width:100%;
 height:40px;
-padding:3;
-padding-left:0;
+margin-right:5;
 margin-left:0;
+font-size:30px;
 }
 .form1{
 display:grid;
-grid-template-columns:repeat(2,autofill 140px);
+grid-template-columns:repeat(2,80% 1fr);
 gap:10px;
 padding:7px;
-padding-left:0;
+font-weight:bold;
 }
 .celula2{
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-align-items:center;
+display:grid;
+grid-template-columns:repeat(4, 1fr 1fr 1fr 1fr);
 background-color:lightgreen;
 color:darkgreen;
-padding:3px;
 border-radius:3px;
-margin:5px;
+font-weight:bold;
+text-align:center;
+margin-bottom:30px;
 }
-table{
-border:none;
+#pd1{
+padding:50px;
+}
+#pd2{
+display:inline-block;
+align-items:center;
+}
+.fm1{
+text-align:center;
+font-size:55px;
+}
+p{
+background-color:darkgreen;
+width:1px;
+height:auto;
+}
+.tabs{
+border:1px solid darkgreen;
 }

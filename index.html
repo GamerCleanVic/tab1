@@ -9,60 +9,21 @@
     <body>
       <h1 class="hOne">DIGITE UM NUMERO INTEIRO</h1>
       <div class="form1">
-        <input type="text" autocomplete="off" id="a" name="a" class="caixa1" value="" />
+        <input type="number" autocomplete="off" id="a" name="a" class="caixa1" value="" />
         <button class="btn1">CONFIRMAR</button>
       </div>
       <br />
 
-      <div class="celula2"><p id="fm1"></p></div>
-      <div class="celula2"><p id="fm2" type="text/javascript"></p></div>
-      <div class="celula2"><p id="fm3"></p></div>
-      <div class="celula2"><p id="fm4"></p></div>
-      <div class="celula2"><p id="fm5"></p></div>
-      <script type="text/javascript">
+<div class"contn1">
+      <div class="celula2" id="pd2">
+	      <h2 id="fm1"></h2>
+      </div>
+      <div class="celula2" id="pd1">
+	      <h2 id="fm2">
+		      <script type="text/javascript" src="js/soma.js"></script>
+	      </h2>
+      </div>
 
-
-	var btnEnviar = document.querySelector('.btn1')
-	btnEnviar.addEventListener('click', function(event){
-		event.preventDefault();
-		enviar();
-	})
-        function enviar() {
-        var b = document.getElementById("a").value;
-        document.getElementById("fm1").innerHTML = "TABUADA DO: " + b + "<br><br>";
-	var i = 0;
-	var c = parseInt(b);
-document.write("TABUADA DO "+b+"<br><br>");
-document.write("SOMA"+"<br>");
-
-
-        	for(i=1;i<=10;i++){
-			/*document.getElementById("fm3").innerHTML =(b+" + "+i+" = "+(c + i)+"<br>"); */
-			/*document.body.style.backgroundColor = '#1b1b1b';*/
-			document.write(b+" + "+i+" = "+(c + i)+"<br>");
-        	}
-
-document.write("<br><br>");
-document.write("SUBTRAÇÃO"+"<br>");
-        	for(i=1;i<=10;i++){
-			document.write(b+" - "+i+" = "+(c - i)+"<br>");
-        	}
-document.write("<br><br>");
-document.write("MULTIPLICAÇÃO"+"<br>");
-        	for(i=1;i<=10;i++){
-			document.write(b+" x "+i+" = "+(c * i)+"<br>");
-        	}
-document.write("<br><br>");
-document.write("DIVISÃO"+"<br>");
-        	for(i=1;i<=10;i++){
-			document.write(b+" / "+i+" = "+(c / i)+"<br>");
-        	}
-
-
-
-	}
-
-      </script>
     </body>
   </html>
 </html>

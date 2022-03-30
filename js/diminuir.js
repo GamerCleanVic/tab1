@@ -1,20 +1,19 @@
-var btnEnviar = document.querySelector('.btn1')
-btnEnviar.addEventListener('click', function(event){
+var btnEnviar2 = document.querySelector('.btn1')
+btnEnviar2.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar();
+	enviar2();
 })
-function enviar() {
-	const h3 = document.getElementById("fm2");
-       	var b = document.getElementById("a").value;
+document.getElementById("fm3").innerHTML = "SUBTRAÇÃO";
+function enviar2() {
+	const h3 = document.getElementById("fm3");
+       	var b2 = document.getElementById("a").value;
 
-	var i = 0;
-	var c = parseInt(b);
-
-	for(i=10;i>0;i--){
-		let print4 = (b+" + "+i+" = "+(c + i)+"<br>");
-		h3.insertAdjacentHTML("afterend", print4);
-        }
+	var i2 = 0;
+	var c2 = parseInt(b2);
 		
-	let print5 = ("<br><br>");
-	h3.insertAdjacentHTML("afterend", print5);
+       	document.getElementById("fm3").innerHTML = "SUBTRAÇÃO<br>";
+	for(i2=10;i2>0;i2--){
+		let print2 = (b2+" - "+i2+" = "+(c2 - i2)+"<br>");
+		h3.insertAdjacentHTML("afterend", print2);
+        }
 }

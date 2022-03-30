@@ -1,22 +1,19 @@
-var btnEnviar = document.querySelector('.btn1')
-btnEnviar.addEventListener('click', function(event){
+var btnEnviar2 = document.querySelector('.btn1')
+btnEnviar2.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar();
+	enviar4();
 })
-function enviar() {
-	const h5 = document.getElementById("fm2");
-       	var b = document.getElementById("a").value;
+document.getElementById("fm5").innerHTML = "DIVISÃO";
+function enviar4() {
+	const h5 = document.getElementById("fm5");
+       	var b4 = document.getElementById("a").value;
 
-	var i = 0;
-	var c = parseInt(b);
-
-	for(i=10;i>0;i--){
-		let print8 = (b+" + "+i+" = "+(c + i)+"<br>");
-		h5.insertAdjacentHTML("afterend", print8);
+	var i4 = 0;
+	var c4 = parseInt(b4);
+	
+document.getElementById("fm5").innerHTML = "DIVISÃO<br>";		
+	for(i4=10;i4>0;i4--){
+		let print4 = (b4+" / "+i4+" = "+(c4 / i4)+"<br>");
+		h5.insertAdjacentHTML("afterend", print4);
         }
-		
-	let print9 = ("<br><br>");
-	h5.insertAdjacentHTML("afterend", print9);
 }
-
-

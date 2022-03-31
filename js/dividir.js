@@ -1,11 +1,11 @@
-var btnEnviar2 = document.querySelector('.btn1')
-btnEnviar2.addEventListener('click', function(event){
+var btnEnviar3 = document.querySelector('.btn1')
+btnEnviar3.addEventListener('click', function(event){
 	event.preventDefault();
 	enviar4();
 })
 document.getElementById("fm5").innerHTML = "DIVISÃO";
 function enviar4() {
-	const h5 = document.getElementById("fm5");
+	const h2 = document.getElementById("fm5");
        	var b4 = document.getElementById("a").value;
 
 	var i4 = 0;
@@ -14,7 +14,8 @@ function enviar4() {
 document.getElementById("fm5").innerHTML = "DIVISÃO<br>";		
 	for(i4=10;i4>0;i4--){
 		let print4 = (b4+" / "+i4+" = "+(c4 / i4)+"<br>");
-		h5.insertAdjacentHTML("afterend", print4);
+
+		h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print4+"</div>");
         }
 
 document.getElementById("rf1").innerHTML = "<a href='index.html'><button class='btnA'>TENTAR COM OUTRO NÚMERO</button></a>";

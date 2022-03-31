@@ -16,4 +16,6 @@ document.getElementById("fm5").innerHTML = "DIVISÃO<br>";
 		let print4 = (b4+" / "+i4+" = "+(c4 / i4)+"<br>");
 		h5.insertAdjacentHTML("afterend", print4);
         }
+
+document.getElementById("rf1").innerHTML = "<a href='index.html'><button class='btnA'>TENTAR COM OUTRO NÚMERO</button></a>";
 }

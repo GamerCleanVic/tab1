@@ -33,12 +33,11 @@ width:100%;
 height:40px;
 margin-right:5;
 margin-left:0;
-margin-right:40px;
 font-size:30px;
 }
 .form1{
 display:grid;
-grid-template-columns:repeat(autofill, 1fr 1fr);
+grid-template-columns:repeat(2, 78.8% 1fr);
 gap:10px;
 padding:7px;
 font-weight:bold;
@@ -168,14 +167,40 @@ line-height: 3;
 text-decoration:underline overline;
 }
 .fm3{
+line-height 3;
+text-decoration:underline overline;
+}
+.fzm4{
 line-height: 3;
 text-decoration:underline overline;
 }
-.fm4{
+.fzm5{
 line-height: 3;
 text-decoration:underline overline;
 }
-.fm5{
-line-height: 3;
-text-decoration:underline overline;
+.btn3{
+background-color:#e6e6e6;
+color:#6600ff;
+width:135px;
+font-weight:bold;
+border:2px solid #6600ff;
+border-radius:5px;
+height:46px;
+font-size:18px;
+box-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px #d9d9d9;
+}
+.btn3:hover{
+background-color:#6600ff;
+color:#e6e6e6;
+border:2px solid #e6e6e6;
+border-radius:5px;
+margin-left:10px;
+}
+.btn3:active{
+background-color:#e6e6e6;
+color:#6600ff;
+border:4px solid #6600ff;
+border-radius:5px;
+margin-left:40px;
+width:200px;
 }

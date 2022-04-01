@@ -1,4 +1,4 @@
-var btnEnviar = document.querySelector('.btn1')
+var btnEnviar = document.querySelector('.btn3')
 btnEnviar.addEventListener('click', function(event){
 	event.preventDefault();
 	enviar();

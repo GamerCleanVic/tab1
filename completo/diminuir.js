@@ -1,10 +1,10 @@
 var btnEnviar2 = document.querySelector('.btn3')
 btnEnviar2.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar2();
+	enviar6();
 })
 document.getElementById("fm3").innerHTML = "SUBTRAÇÃO";
-function enviar2() {
+function enviar6() {
 	const h2 = document.getElementById("fm3");
        	var b2 = document.getElementById("a").value;
 

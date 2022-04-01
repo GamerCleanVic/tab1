@@ -1,10 +1,10 @@
 var btnEnviar2 = document.querySelector('.btn3')
 btnEnviar2.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar3();
+	enviar7();
 })
 document.getElementById("fm4").innerHTML = "MULTIPLICAÇÃO";
-function enviar3() {
+function enviar7() {
 	const h2 = document.getElementById("fm4");
        	var b3 = document.getElementById("a").value;
 

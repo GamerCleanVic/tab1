@@ -1,10 +1,10 @@
 var btnEnviar3 = document.querySelector('.btn3')
 btnEnviar3.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar4();
+	enviar8();
 })
 document.getElementById("fm5").innerHTML = "DIVISÃO";
-function enviar4() {
+function enviar8() {
 	const h2 = document.getElementById("fm5");
        	var b4 = document.getElementById("a").value;
 

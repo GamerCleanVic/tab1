@@ -1,11 +1,11 @@
 var btnEnviar = document.querySelector('.btn3')
 btnEnviar.addEventListener('click', function(event){
 	event.preventDefault();
-	enviar();
+	enviar5();
 })
 document.getElementById("fm1").innerHTML = "<h1 style='border-radius:20px; border-bottom:3px solid #e6e6e6;'>TABUADA</h1>";
 document.getElementById("fm2").innerHTML = "SOMA";
-function enviar() {
+function enviar5() {
 	const h2 = document.getElementById("fm2");
        	var b = document.getElementById("a").value;
 if(document.getElementById("a").value == ""){

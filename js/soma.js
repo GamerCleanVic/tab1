@@ -1,8 +1,17 @@
+function toLimit(string = ""){
+        string.value = string.value.substring(0,16);
+	if(string.value > 16){
+		alert("DIGITE Nº ATÉ 16 CARACTERES");
+	}
+}
+
 var btnEnviar = document.querySelector('.btn1')
 btnEnviar.addEventListener('click', function(event){
 	event.preventDefault();
 	enviar();
 })
+
+
 document.getElementById("fm1").innerHTML = "<h1 style='border-radius:20px; border-bottom:3px solid #e6e6e6;'>TABUADA</h1>";
 document.getElementById("fm2").innerHTML = "SOMA";
 function enviar() {

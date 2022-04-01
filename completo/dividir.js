@@ -13,8 +13,7 @@ function enviar4() {
 	
 document.getElementById("fm5").innerHTML = "DIVISÃO<br>";		
 	for(i4=10;i4>0;i4--){
-		let result = (c4 / i4).toFixed(2)
-		let print4 = (b4+" / "+i4+" = "+result+"<br>");
+		let print4 = (b4+" / "+i4+" = "+(c4 / i4)+"<br>");
 
 		h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print4+"</div>");
         }

@@ -82,8 +82,8 @@ padding-left:15px;
 }
 @media (max-width:1024px){
 body{
-margin-right:80px;
-margin-left:80px;
+margin-right:40px;
+margin-left:40px;
 }
 .contn1, #pd3{
 display:inline-block;
@@ -94,9 +94,13 @@ padding-top:20px;
 padding-bottom:20px;
 font-size:35px;
 }
+div #pd2{
+padding:18px;
+}
 .celula2{
 margin-right:80px;
 margin-left:80px;
+padding-bottom:-30px;
 }
 .form1{
 display:grid;
@@ -111,8 +115,8 @@ align-items:center;
 .btn1{
 margin-right:30px;
 }
-.btn2{
-
+.btnA{
+height:40px;
 }
 .caixa1{
 margin-bottom:10px;

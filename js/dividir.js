@@ -20,6 +20,6 @@ document.getElementById("fm5").innerHTML = "DIVISÃO<br>";
 		h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print4+"</div>");
         }
 
-document.getElementById("rf1").innerHTML = "<a href='index.html'><button class='btnA'>TENTAR COM OUTRO NÚMERO</button></a>";
+document.getElementById("rf1").innerHTML = "<a href='index.html' style='margin-left:0px; align-items:center; margin-right:80px;';><button class='btnA' style='width:442px;'>TENTAR COM OUTRO NÚMERO</button></a>";
 
 }

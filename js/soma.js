@@ -38,5 +38,4 @@ if(document.getElementById("a").value == ""){
 			h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print1+"</div>");
 
         	}
-window.scrollTo(0, document.querySelector("#fm4").scrollHeight);
 }

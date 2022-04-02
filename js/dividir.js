@@ -2,6 +2,7 @@ var btnEnviar3 = document.querySelector('.btn1')
 btnEnviar3.addEventListener('click', function(event){
 	event.preventDefault();
 	enviar4();
+	setTimeout(() => { window.scrollTo(0, document.querySelector("#fm5").scrollHeight) }, 1000);
 })
 document.getElementById("fm5").innerHTML = "DIVISÃO";
 function enviar4() {
@@ -20,4 +21,5 @@ document.getElementById("fm5").innerHTML = "DIVISÃO<br>";
         }
 
 document.getElementById("rf1").innerHTML = "<a href='index.html'><button class='btnA'>TENTAR COM OUTRO NÚMERO</button></a>";
+
 }

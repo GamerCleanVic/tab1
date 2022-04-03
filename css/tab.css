@@ -108,21 +108,32 @@ grid-template-columns:repeat(1, 1fr);
 font-weight:bold;
 margin-left:80px;
 margin-right:80px;
-padding-right:0px;
-padding-left:0px;
 align-items:center;
 }
 .btn1{
-margin-right:30px;
+width:100%;
+height:200px;
+font-size:80px;
 }
+/*.btn3{
+width:100%;
+height:125px;
+font-size:30px;
+}*/
 .btnA{
 height:40px;
 }
 .caixa1{
 margin-bottom:10px;
+width:100%;
+height:140px;
+font-size:120px;
 }
 .contn1 h2{
 padding-top:10%;
+}
+#pd1{
+padding-bottom:60px;
 }
 }
 a{
@@ -204,19 +215,7 @@ border-right:15px solid #d9d9d9;
 background-color:#6600ff;
 color:#d9d9d9;
 }
-.fm2{
-line-height: 3;
-text-decoration:underline overline;
-}
-.fm3{
-line-height 3;
-text-decoration:underline overline;
-}
-.fm4{
-line-height: 3;
-text-decoration:underline overline;
-}
-.fm5{
+.fm2, .fm3, .fm4, .fm5{
 line-height: 3;
 text-decoration:underline overline;
 }
@@ -258,3 +257,4 @@ margin-left:0px;
 margin-top:3px;
 margin-left:2px;
 }
+

@@ -35,7 +35,6 @@ if(document.getElementById("a").value == ""){
 		for(i=10;i>0;i--){
 			let print1 = (b+" + "+i+" = "+(c + i)+"<br>");
 
-			h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print1+"</div>");
-
+		h2.insertAdjacentHTML("afterend", "<div style='border:2px solid #d9d9d9; margin:7px; margin-right:5px; margin-left:5px;'>"+print1+"</div>");
         	}
 }

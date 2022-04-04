@@ -7,7 +7,8 @@ margin-right:0px;
 .btn1{
 background-color:#e6e6e6;
 color:#6600ff;
-width:135px;
+width:400px;
+height:125px;
 font-weight:bold;
 border:2px solid #6600ff;
 border-radius:5px;
@@ -31,15 +32,14 @@ margin-left:40px;
 .caixa1{
 border:2px solid #6600ff;
 border-radius:5px;
-width:100%;
-height:40px;
+height:80px;
 margin-right:5;
 margin-left:0;
-font-size:30px;
+font-size:77px;
 }
 .form1{
 display:grid;
-grid-template-columns:repeat(2, 78.8% 1fr);
+grid-template-columns:repeat(1,1fr);
 gap:10px;
 padding:7px;
 font-weight:bold;
@@ -81,49 +81,73 @@ padding-right:15px;
 padding-left:15px;
 }
 @media (max-width:1024px){
-body{
-margin-right:40px;
-margin-left:40px;
-}
-.contn1, #pd3{
-display:inline-block;
-align-items:flex-start;
-}
-#titulo h1{
-padding-top:20px;
-padding-bottom:20px;
-font-size:35px;
-}
-div #pd2{
-padding:18px;
-}
-.celula2{
-margin-right:80px;
-margin-left:80px;
-padding-bottom:-30px;
-}
-.form1{
-display:grid;
-grid-template-columns:repeat(1, 1fr);
-font-weight:bold;
-margin-left:80px;
-margin-right:80px;
-padding-right:0px;
-padding-left:0px;
-align-items:center;
-}
-.btn1{
-margin-right:30px;
-}
-.btnA{
-height:40px;
-}
-.caixa1{
-margin-bottom:10px;
-}
-.contn1 h2{
-padding-top:10%;
-}
+	body{
+		margin-right:40px;
+		margin-left:40px;
+	}
+	.contn1, #pd3{
+		display:inline-block;
+		align-items:flex-start;
+	}
+	#titulo h1{
+		padding-top:20px;
+		padding-bottom:20px;
+		font-size:35px;
+	}
+	div #pd2{
+		padding:18px;
+	}
+	.celula2{
+		margin-right:80px;
+		margin-left:80px;
+		padding-bottom:-30px;
+	}
+	div #pd1{
+		padding-bottom:50px;
+	}
+	.form1{
+		display:grid;
+		grid-template-columns:repeat(1, 1fr);
+		font-weight:bold;
+		margin-left:80px;
+		margin-right:80px;
+		padding-right:0px;
+		padding-left:0px;
+		align-items:center;
+	}
+	.btn1{
+		margin-right:30px;
+		width:100%;
+		height:80px;
+		font-size:50px;
+		font-weight:bold;
+	}
+	.btn2{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		width:400px;
+		height:80px;
+		font-size:120px;
+		font-weight:bold;
+		align-items:center;
+	}
+	a .pA{
+		margin-top:28px;
+	}
+	.btnA{
+		height:40px;
+	}
+	.caixa1{
+		margin-bottom:10px;
+		width:99%;
+	}
+	.contn1 h2{
+		padding-top:10%;
+	}
+	#fm2, #fm3, #fm4, #fm5{
+		font-size:50px;
+	}
 }
 a{
 text-decoration:none;
@@ -135,15 +159,15 @@ font-weight:bold;
 text-align:center;
 font-size:25px;
 display:inline-block;
-background-color:#6600ff;
-color:#d9d9d9;
 border-radius:5px;
+background-color:#d9d9d9;
+color:#6600ff;
 border:1px solid #6600ff;
 box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px #d9d9d9;
 }
 .btnA:hover{
-background-color:#d9d9d9;
-color:#6600ff;
+background-color:#6600ff;
+color:#d9d9d9;
 border:2px solid #6600ff;
 }
 .erroR{
